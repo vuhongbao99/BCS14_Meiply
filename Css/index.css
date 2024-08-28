@@ -1,0 +1,137 @@
+/* reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.container{
+    max-width: 1140px;
+   
+    margin: 0 auto;
+}
+
+header{
+   
+    padding: 20px 0;
+    color: white;
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ffffff46;
+}
+/*gọi tất cả các thẻ*/
+header a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+header .header_content{
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul{
+    /*không điều chỉnh được chiều cao và chiều dài
+    khi sử dụng display: inline 
+    - Không điều chỉnh được top và bottom
+    - display : inline - block ra mắt và giải quyết các vaabs đề của inline*/
+   list-style: none;
+}
+header ul li{
+    display: inline-block;
+    margin-right: 30px;
+    text-transform: uppercase; /*dùng để in hoa - lowercase dùng để in thường*/
+}
+header .header_logo{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*header ul li:first-child a{
+    color: red;
+}
+header ul li:last-child a{
+    color: blue;
+}
+header ul li:nth-child(5) a{
+    color: green;
+}*/
+header ul .active a{
+    color: red;
+} 
+ header:hover ul li:hover a {
+    color: red;
+ }
+ 
+
+ /*banner css*/
+ .banner {
+    background-image: url(./../img/home_slider.jpg);
+    height: 80vh;
+    /*Điều chỉnh số lần lặp lại*/
+    background-repeat: no-repeat;
+     /*Điều chỉnh kích thước nền*/
+    background-size: cover;
+     /*Điều chỉnh vị trí hiển thị của hình nền*/
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+ }
+
+ .banner .sub_title{
+    font-size: 25px;
+ }
+ .banner h1{
+    font-size: 75px;
+    /*Điều chỉnh chiều cao trong html css line-height*/
+    line-height: 83px;
+ }
+ .banner button{
+    /*border-width: 3px;
+    border-style: solid ;*/
+   /* border: 3px double red;*/
+   border: 2px solid  #e62b4a;
+   background-color: #e62b4a;
+   padding: 10px 30px;
+   text-transform: uppercase;
+   color: white;
+   transition: all 0.5s;
+   cursor: pointer;
+ }
+ .banner button:hover{
+    background-color: #af2238;
+ }
+
+ 
+ /*services css*/
+ .service{
+    background-color: black;
+    padding: 80px 0;
+ }
+
+ .service .service_title{
+    text-align: center;
+    color: white;
+ }
+.service .service_title .sub_title{
+     color: #e62b4a;
+     font-size: 14px;
+
+}
+.service .service_title h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+.service .service_title p:last-child{
+    color: #888888;
+    margin-top: 15px;
+    font-weight: both;
+
+}
+

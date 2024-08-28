@@ -1,0 +1,75 @@
+
+
+h2{
+    font-size: 30px;
+    background-color: purple;
+    color: white;
+}
+
+/*selector class*/
+.bg-orange{
+    background-color: orange;
+}
+.bg-red{
+    background-color: red;
+}
+.text-center{
+    text-align: center;
+}
+.bg-green{
+    background-color: green;
+    color: white;
+    text-align: right;
+}
+
+/* Selector ID*/
+#demo{
+    background-color: chocolate;
+    color: white;
+}
+
+/* giá trị ưu tiên = 1*/
+p {
+    background-color: blue;
+}
+/* giá trị ưu tiên = 10*/
+.text-blue{
+    background-color: black;
+}
+.bg-yellow{
+    background-color: yellow;
+}
+/*CSS Quan hệ cha con*/
+div .bg-green{
+    text-align: center;
+}
+/*demo về flex trong dự án*/
+.demo1{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+.demo2{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+}
+.flex-container{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    /*justify-content: center;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: flex-start;*/
+    /*justify-content: Space-between;*/
+    /*justify-content: Space-evenly;*/
+
+    /*align-items: center;*/
+    /*align-items: flex-start;*/
+    /*align-items: flex-end;*/
+
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse;*/
+    /*flex-direction:  row-reverse;*/
+}
+/*viewport: điều chỉnh khung màn hình*/
